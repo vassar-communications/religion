@@ -1,0 +1,228 @@
+@import "_imports";
+a,
+.Module__link,
+.u-lAside a,
+.u-VCard--site a,
+.u-VCard--site .u-List__item a {
+    text-decoration: none;
+    border-bottom: 1px solid $linkColor;
+    padding-bottom: 0;
+}
+a:visited {
+    border-bottom: 1px solid $linkColorVisited;
+}
+a:hover,
+a:focus {
+    border-bottom: 1px solid $linkColorHoverFocus;
+}
+a:active {
+    border-bottom: 1px solid $linkColorActive;
+}
+.u-VCard--site a:visited,
+.u-VCard--site .u-List__item a:visited {
+    border-bottom: 1px solid $linkColor;
+}
+.u-VCard--site a:hover,
+.u-VCard--site .u-List__item a:hover,
+.u-VCard--site a:focus,
+.u-VCard--site .u-List__item a:focus {
+    border-bottom: 1px solid $linkColorHoverFocus;
+}
+.u-VCard--site a:active,
+.u-VCard--site .u-List__item a:active {
+    border-bottom: 1px solid $linkColorActive;
+}
+.u-ArticleListItem__link:hover,
+.u-ArticleListItem__link:focus,
+.u-ArticleListItem__link:active,
+.u-ArticleListItem__link:visited,
+.u-ArticleNavGroup__navButton:hover,
+.u-ArticleNavGroup__navButton:focus,
+.u-ArticleNavGroup__navButton:active,
+.u-ArticleNavGroup__navButton:visited,
+.icon-close:hover,
+.icon-close:focus,
+.icon-close:active,
+.icon-close:visited,
+.u-Search__button:hover,
+.u-Search__button:focus,
+.u-Search__button:active,
+.u-Search__button:visited,
+.ac-NavAnchor--menu:hover,
+.ac-NavAnchor--menu:focus,
+.ac-NavAnchor--menu:active,
+.ac-NavAnchor--menu:visited,
+.u-NavSite__item:hover,
+.u-NavSite__item:focus,
+.u-NavSite__item:active,
+.u-NavSite__item:visited,
+.u-Masthead__siteName--link:hover,
+.u-Masthead__siteName--link:focus,
+.u-Masthead__siteName--link:active,
+.u-Masthead__siteName--link:visited,
+.u-Masthead__vassar--link:hover,
+.u-Masthead__vassar--link:focus,
+.u-Masthead__vassar--link:active,
+.u-Masthead__vassar--link:visited {
+    border-bottom: none;
+}
+.u-Masthead__siteName--link {
+    @include link-colors($linkColorHoverFocus, $linkColor, $linkColorActive, $linkColorHoverFocus, $linkColorHoverFocus);
+}
+.icon-close svg {
+    fill: #fff; 
+}
+.icon-close:visited svg {
+    fill: #fff; 
+}
+.icon-close:focus svg {
+    fill: $linkColor; 
+}
+.icon-close:hover svg {
+    fill: $linkColor; 
+}
+.icon-close:active svg {
+    fill: $linkColorActive; 
+}
+.u-Search__field {
+    border: 8px solid #000;
+}
+html.u-pageHome {
+    background: #000 url(../);
+}
+html.u-pageInner {
+    background: #000 url(../images/css/bg-interior.jpg) repeat-x top center;
+}
+body {
+    position:relative;
+}
+.u-lMain,
+.u-lContent,
+.u-lAside,
+.u-NavSite,
+.u-lFooter {
+    position: relative;
+    z-index: 10;
+}
+.u-pageHome {
+    body {
+        background: #000 url(../images/css/bg-home.jpg) no-repeat top center;
+    }
+    .u-lHeader {
+        padding-bottom: 0;
+    }  
+    .u-NavSite__level--1 {
+        border-right: none;
+    }
+    .Module--sidebar {
+        background-color: #F8F8F8;
+    }
+}
+.u-pageInner {
+        body:after {
+        content: "";
+        position: absolute;
+        background-color: #fff;
+        top:10.5em;
+        bottom: 0;
+        width: 100%;
+        z-index: 1
+    }
+    .u-lHeader {
+        border-top: .65em solid;
+    }
+    .u-lFooter {
+        background: #000 url(../images/css/bg-footer-interior.jpg) no-repeat top right;
+        height: 190px;
+        overflow: visible;
+        padding: 40px 40px 0 40px;
+    }
+}
+.Module__header { 
+    color: $linkColor;
+}
+.u-VCard--site {
+    color: $moduleBgColor;
+    a,
+    .u-List__item a {
+        @include link-colors($linkColor, #fff, $linkColorActive, $linkColor, #fff);
+    }
+}
+.Module--sidebar {
+    background-color: $moduleBgColor;
+}
+.u-Search {
+    border: 1px solid $mauve;
+}
+.learn-more {
+    display: inline-block;
+    a {
+        border-bottom: none;
+        padding: 0 .5em .25em;
+        @include link-colors(#fff, #fff, #fff, #fff, #fff);
+        @include background-colors($linkColor, $linkColorHoverFocus, $linkColorActive, $linkColor, $linkColorHoverFocus);
+    }
+}
+.u-pageHome {
+    .u-NavSite__level--1 > .u-NavSite__itemContainer > .u-NavSite__item,
+    .u-NavSite__level--1 > .u-NavSite__itemContainer > .u-NavSite__item.u-NavSite__item--isCurrent {
+        @include link-colors($linkColor, #fff, $linkColorActive, $linkColor, #fff);
+        @include background-colors(transparent, transparent, transparent, transparent, transparent);
+    }
+}
+@media all and (min-width: $small) { 
+    .u-Search__field {
+        border: none;
+    }
+    .u-Masthead__vassar--link {
+        @include link-colors($linkColorHoverFocus, $linkColor, $linkColorActive, $linkColorHoverFocus, $linkColorHoverFocus);
+    }
+    .u-NavSite__level--1 > .u-NavSite__itemContainer > .u-NavSite__item {
+        @include background-colors(#fff, $navColor, $navColor, #fff, $navColor);
+    }
+    .u-NavSite__level--1 {
+        border-right: 1px solid #D2C1A6;
+    }
+    .u-NavSite__level--1 > .u-NavSite__itemContainer > .u-NavSite__item.u-NavSite__item--isCurrent,
+    .u-NavSite__level--1 > .u-NavSite__itemContainer.u-NavSite__item--isOpen > .u-NavSite__item {
+        @include link-colors(#fff, #fff, #fff, #fff, #fff);
+        @include background-colors($linkColor, $linkColor, $linkColor, $linkColor, $linkColor);
+    }
+    .u-NavSite__level--2 {
+        border-right: 2px solid $linkColor;
+        .u-NavSite__item {
+            @include link-colors($navColor, $fontColor, $linkColorActive, $navColor, $fontColor);
+        }
+        .u-NavSite__item.u-NavSite__item--isCurrent {
+            @include link-colors($linkColor, $linkColor, $linkColor, $linkColor, $linkColor);
+        }
+    }
+    .u-pageHome {
+        .u-NavSite__level--1 > .u-NavSite__itemContainer > .u-NavSite__item,
+        .u-NavSite__level--1 > .u-NavSite__itemContainer > .u-NavSite__item.u-NavSite__item--isCurrent {
+            @include link-colors(#000, #000, #000, #000, #000);
+            @include background-colors(transparent, $linkColor, $linkColor, transparent, $linkColor);
+        }
+    }
+    body:after {
+        top:9.5em;
+    }
+}
+@media all and (min-width: $medium) { 
+    .u-pageInner body:after {
+        top:12.5em;
+    }
+    body:after {
+        top:10.5em;
+    }
+}
+@media all and (min-width: $large) { 
+    .u-pageHome {
+        .Module--sidebar {
+            background-color: transparent;
+        }
+    }
+    body:after {
+        top:13em;
+    }
+}
