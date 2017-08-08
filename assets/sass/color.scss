@@ -118,6 +118,27 @@ body {
         background-color: #F8F8F8;
     }
 }
+/* alert */
+html.u-pageHome.is-alert {
+    body {
+        background: #fff url(../images/css/bg-home.jpg) no-repeat top center;
+    }
+}
+@media all and (min-width: $small) { 
+	.is-alert .u-Search {
+		z-index: 2;
+	}
+}
+.u-pageInner.is-alert { 
+	.u-lHeader {
+    	position: relative;
+    	z-index: 10;
+	}
+	.ac-NavAnchor--menu {
+		z-index: 11;
+	}
+}
+/* end alert */
 .u-pageInner {
         body:after {
         content: "";

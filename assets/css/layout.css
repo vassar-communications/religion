@@ -1,0 +1,95 @@
+/*	CONFIG
+	====== */
+/*	TYPOGRAPHY
+	========== */
+/*	LAYOUT
+	====== */
+/* Site breakpoints */
+/* 400px divided by 16px */
+/* 600px divided by 16px */
+/* 800px divided by 16px */
+/* 1000px divided by 16px */
+/* The padding on u-lHeader, u-lMain, u-lFooter, and u-NavSite. */
+/* COLOR
+	====== */
+/* Basic link colors - these colors also affect the Google Search result link colors */
+/* MODULES
+	======== */
+/* Bios */
+/* Breadcrumbs  */
+/* Footer */
+/* Images */
+/*	Google search results  */
+/* Currently being overridden by something in Google's default CSS */
+/* The numbers that represent pages of search results */
+/* Nav */
+/* level 3 covers Level 3 and up. */
+/* LATEST Modules basic */
+/* that shorthand left in for backwards compatibility */
+/* Use these variables to place a bg color on side news announcement items */
+/* News  */
+/* Not sure all these color settings are necessary
+$u-ArticleListItem__label--type--color:;
+$u-ArticleListItem__label--dateline__posted--color:;
+$u-ArticleListItem__label--dateline__postedDate--color:f; */
+/* LATEST Moved to Module Basic above
+$u-NewsList__itemContainer--margin: 1em 0;
+$u-NewsList__item--background: transparent;
+$u-NewsList__item--padding: 0; */
+/*	Search
+	------ */
+/*	Mobile search colors
+	-------------------- */
+/* this color needs to match the hard-coded value of the input border found in modules/search.scss */
+/*	Up until this point, the search box will be positioned
+	over the masthead, so as not to overlap it. This point
+	depends on how wide the site masthead is. Keep increasing it
+	until the search box no longer overlaps the masthead.
+*/
+/*	Mobile search and menu colors
+	----------------------------- */
+/* The background color of a button, when activated */
+/* The background of the "Vassar College" area */
+/* The background of the search and menu buttons */
+/* This value is found in the nav module but I don't know what it does - maybe remove it? */
+/* The color of the space between search and menu */
+/* Don't modify these */
+@media screen {
+  html {
+    padding-top: 0; }
+
+  .Module--sidebar {
+    padding: 1em; } }
+@media all and (min-width: 37.5em) {
+  .u-pageHome body {
+    padding: 0 5% 5%; }
+  .u-pageHome .u-Masthead {
+    padding: 5em 0 0 1.6%; }
+
+  .u-NavSite {
+    padding: 6.5% 3%; }
+
+  .u-Search {
+    top: 4%;
+    right: 2%; }
+
+  .u-lMain {
+    padding: 6% 4%; }
+
+  .u-lHeader {
+    padding: 6% 2% 3.5%; }
+
+  .u-NavSite__item {
+    padding: .5em .75em; }
+
+  .u-NavSite__level--2 {
+    padding: 1em 0 1em 1em; } }
+@media all and (min-width: 62.5em) {
+  .u-lMain {
+    padding: 6% 0 6% 4%; }
+
+  .u-pageHome .u-lMain {
+    padding-top: 2%; }
+  .u-pageHome .u-NavSite {
+    padding-top: 3%;
+    padding-bottom: 25%; } }
