@@ -1,0 +1,51 @@
+.g-.u-pageInner body:after {
+     max-width: 75em;
+}
+.g-.u-pageInner {
+     background-position: 0% 3em;
+}
+.g-.u-pageInner .u-lHeader {
+     border-top: 0;
+}
+.g-.u-pageHome .Module.Module--contact.Module--sidebar {
+     display: none;
+     visibility: hidden;
+}
+.g-.u-pageInner .PageContentInner {
+     background-color:transparent;
+}
+.g-.u-pageInner body:after {
+     display:none;
+}
+.g-.u-pageInner body:after {
+     max-width: 75em;
+}
+.g-.u-pageInner .PageContentInner:after {
+     content: "";
+     position: absolute;
+     background-color: #fff;
+     top: 10.5em;
+     bottom: 0;
+     width: 100%;
+     z-index: 1;
+}
+.g- .u-lFooter {
+     background: none;
+}
+.g-.u-pageInner .u-lFooter {
+     background: #000 url(../images/css/bg-footer-interior.jpg) no-repeat top right;
+     height: 190px;
+     overflow: visible;
+     padding: 40px 40px 0 40px;
+}
+@media (min-width: 37.5em) {
+    .g-.u-pageInner .u-lMain, .g-.u-pageInner .u-NavSite {
+         padding-top: 4em;
+    }
+    .g-.u-pageInner .PageContentInner:after {
+         top: 7em;
+    }
+    .g- .u-lHeader {
+         padding: 2.5% 2% 1%;
+    }
+}

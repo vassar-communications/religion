@@ -1,3 +1,4 @@
+$transparent : transparent;
 a,
 .Module__link,
 .u-lAside a,
@@ -120,7 +121,7 @@ body {
 /* alert */
 html.u-pageHome.is-alert {
     body {
-        background: #fff url(../images/css/bg-home.jpg) no-repeat top center;
+        background: #000 url(../images/css/bg-home.jpg) no-repeat top center;
     }
 }
 @media all and (min-width: $small) { 
@@ -187,7 +188,7 @@ html.u-pageHome.is-alert {
     .u-NavSite__level--1 > .u-NavSite__itemContainer > .u-NavSite__item,
     .u-NavSite__level--1 > .u-NavSite__itemContainer > .u-NavSite__item.u-NavSite__item--isCurrent {
         @include link-colors($linkColor, #fff, $linkColorActive, $linkColor, #fff);
-        @include background-colors(transparent, transparent, transparent, transparent, transparent);
+        @include background-colors($transparent, $transparent, $transparent, $transparent, $transparent);
     }
 }
 @media all and (min-width: $small) { 
@@ -221,7 +222,7 @@ html.u-pageHome.is-alert {
         .u-NavSite__level--1 > .u-NavSite__itemContainer > .u-NavSite__item,
         .u-NavSite__level--1 > .u-NavSite__itemContainer > .u-NavSite__item.u-NavSite__item--isCurrent {
             @include link-colors(#000, #000, #000, #000, #000);
-            @include background-colors(transparent, $linkColor, $linkColor, transparent, $linkColor);
+            @include background-colors(transparent, transparent, transparent, transparent, transparent);
         }
     }
     body:after {
