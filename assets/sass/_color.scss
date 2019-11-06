@@ -118,6 +118,17 @@ body {
         background-color: #F8F8F8;
     }
 }
+
+.gf- body
+{
+    background: none;
+}
+
+.gf-.u-pageHome .PageContent
+{
+    background: #000 url(../images/css/bg-home.jpg) no-repeat top center;
+}
+
 /* alert */
 html.u-pageHome.is-alert {
     body {

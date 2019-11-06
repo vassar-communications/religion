@@ -16,6 +16,23 @@
             padding: 5em 0 0 1.6%;
         }
     }
+    
+    .gf-.u-pageHome body
+    {
+        padding: 0;
+    }
+
+    .gf-.u-pageHopme .PageContent
+    {
+        padding: 0 5% 5%;
+    }
+    
+    .gf- .u-lContent
+    {
+        padding-right: 5%;
+    }
+    
+
     .u-NavSite {
         padding: 6.5% 3%;
     }
@@ -36,6 +53,16 @@
         padding: 1em 0 1em 1em;
     }
 }
+
+@media all and (min-width: $medium)
+{
+    .gf- .PageContent
+    {
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+}
+
 @media all and (min-width: $large) {
     .u-lMain {
         padding: 6% 0 6% 4%;
@@ -50,3 +77,14 @@
         }
     }
 }
+
+@media all and (min-width: 79em)
+{
+    .gf- .PageContent
+    {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+   
+
